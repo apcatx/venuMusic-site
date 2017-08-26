@@ -19,13 +19,12 @@ body {
 header {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(31, 81, 170, 0.26);
   height: 250px;
-  background-color: rgba(7, 39, 140, 0.3);
   color: white;
   font-size: 35px;
   font-family: 'Megrim', cursive;
   padding: 10px 30px;
-  background-color: rgba(31, 81, 170, 0.26);
 }
 
 .header_left {
@@ -41,7 +40,6 @@ header {
   width: auto;
   flex-direction: column;
   text-align: center;
-  flex-basis: 40%;
 }
 
 .header_right{
