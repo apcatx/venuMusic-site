@@ -1,28 +1,41 @@
-html {
-}
-
-body {
-
+body{
+  background-color: #000219;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  position: relative;
 }
 
 .wrapper {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
   height: 100%;
-  margin: auto;
+  background-image: url(blue-vector.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(31, 81, 170, 0.26);
-    color: white;
-    font-family: 'Megrim', cursive;
-    padding: 20px;
+  display: inline-flex;
+  background-color: rgba(31, 81, 170, 0.26);
+  color: white;
+  font-family: 'Megrim', cursive;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  position: relative;
+  height: auto;
+  right: 0;
 }
 
 .header_left {
   display: flex;
-  justify-content: flex-start;
   text-align: left;
   flex-basis: 25%;
   margin: auto 0;
@@ -32,13 +45,11 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   flex-basis: 50%;
 }
 
 .header_right{
   display: flex;
-  justify-content: flex-end;
   text-align: right;
   flex-basis: 25%;
   margin: auto 0;
@@ -64,17 +75,21 @@ header h5 {
   margin: auto;
 }
 
-main {
+section {
   display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+  height: auto;
+  width: 100%;
   justify-content: space-around;
-  height: 100%;
 }
 
-main a {
+section a {
+  display: flex;
   height: 300px;
   width: 300px;
   background-color: rgba(20, 88, 195, 0.54);
+  margin: auto;
 }
 
 .box{
@@ -82,7 +97,6 @@ main a {
   height: 300px;
   float: left;
   position: relative;
-  overflow: hidden;
   width: 300px;
 }
 
@@ -134,27 +148,39 @@ main a {
   box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.13);
 }
 
+footer {
+  display: flex;
+  padding: 20px;
+  height: auto;
+  background-color: rgba(7, 39, 140, 0.64);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 nav {
   display: flex;
+  justify-content: center;
+  margin: auto 0;
   width: 100%;
-  margin: auto;
 }
 
 nav a {
-  display: flex;
-  justify-content: center;
   color: white;
   font-family: 'Megrim', cursive;
   font-size: 30px;
   font-weight: bolder;
   text-decoration: none;
-  flex-basis: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  flex-basis: 33%;
 }
 
-footer {
-  display: flex;
-  height: 100px;
-  background-color: rgba(7, 39, 140, 0.64);
-}
 
 /*resume.html*/
+
+.resume_wrapper {
+  display: flex;
+  justify-content: center;
+}
